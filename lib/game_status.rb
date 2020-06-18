@@ -33,11 +33,20 @@ def won?(board)
   false
 end
 
-#full
+#full?
 def full?(board)
   if board.any? {|index| index == nil || index == " "}
     return false
   else
     return true
+  end
+end
+
+#draw?
+def draw?(board)
+  if full?(board) == true && won?(board) == false 
+    return true
+  else 
+    false 
   end
 end
