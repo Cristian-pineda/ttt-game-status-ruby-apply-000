@@ -35,11 +35,11 @@ end
 
 #full
 def full?(board)
-  if board.any? do |index|
-    index == nil || index == " "
+  board.any? do |index|
+    if index == nil || index == " "
     return false
   end
-  else
+else
     return true
   end
 end
