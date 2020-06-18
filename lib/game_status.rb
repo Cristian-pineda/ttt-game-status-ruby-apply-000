@@ -38,7 +38,9 @@ def full?(board)
   if board.any? do |index|
     index == nil || index == " "
     return false
+  end
   else
     return true
   end
 end
+
