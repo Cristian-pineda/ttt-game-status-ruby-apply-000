@@ -32,3 +32,13 @@ def won?(board)
   end
   false
 end
+
+#full
+def full?(board)
+  if board.any? do |index| 
+    index == nil || index == " "
+    return false
+  else
+    return true
+  end
+end
